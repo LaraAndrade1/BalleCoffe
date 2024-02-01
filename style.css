@@ -1,0 +1,129 @@
+/* Importação Fonts (GoogleFonts) */
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@600&family=Montserrat:wght@800&family=Teko:wght@600&display=swap');
+ 
+  /* Estilos gerais (Todo projeto) */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background: #1f1517;
+    color: #fff;
+  }
+
+  html{
+    font-family: inter, sans-serif;
+    font-weight: 600;
+  }
+
+  a{
+    text-decoration: none; /* Remove decoração texto */
+
+  }
+
+  ul{
+    /* Remove os marcadores (Bolinhas)*/
+    list-style-type: none;
+  }
+
+  nav{ 
+    max-width: 1020px;
+    margin: auto; /* Centraliza o elemento horizontalmente*/
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .title{
+      font-family: 'Teko', sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+      text-transform: uppercase; /* Transforma o texto para letras maiúsculas*/
+    }
+
+  /* Estilos para o menu hamburguer */
+  .menu-toggle{
+    display: none;
+    cursor: pointer;
+  }
+
+  /* Imagem do hamburguer (Responsividade) */
+
+  .menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    color: #fff2e780;
+    margin-top: 9px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .menu a:hover {
+    color: white;
+  }
+
+  .menu a:visited {
+    color:#fff2e780;
+  }
+
+  .github {
+    color:white;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+
+  .github:hover {
+    color: #a45a49;
+  }
+
+  /*__________________________________*/
+  /*Responsividade (Telas menores que 768px)*/
+
+  @media screen and (max-width:768px) {
+
+    /* Header */
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+      z-index: 9;
+    
+  }
+  nav ul li {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .menu {
+    margin-left: 0px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    margin-right: -70px;
+  }
+  .github {
+    margin-left: 70px;
+    margin-right: -70px;
+  }
+.title{
+  margin-left: -100px;
+}
+
+  }
