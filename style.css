@@ -262,3 +262,155 @@ button:hover {
       padding-bottom: 0px;
   }
 }
+
+/* _________________________________________________ */
+/* Receitas */
+
+.receitas {
+  display: flex;
+  flex-direction: column;
+  max-width: 1120px;
+  padding: 3rem 2rem;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.receitas-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.receitas-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff2e7;
+}
+
+.receitas-subtitle {
+  color: #c7bab3;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Usado na palavra (Em alta) em receitas */
+.amarelo {
+  color: #e7a80e;
+}
+
+article {
+  column-count: 2;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: -3rem;
+}
+
+.card-2 {
+  background: #241a1c;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-basis: 29rem;
+  margin-top: 2rem;
+}
+
+.card-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cappuccino {
+  color: #fff2e7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.avaliacao {
+  color: #756a67;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.descricao {
+  color: #c7bab3;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.author > img {
+  border-radius: 20rem;
+  width: 1.5rem;
+}
+
+.ignacio {
+  color: #c7bab3;
+  font-family: 'inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* _______________________________________________________ */
+/* Footer */
+
+footer {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: #23181A;
+}
+
+.footer-container {
+  color: #fff2e7;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-content {
+  color: rgba(255, 242, 231, 0.50);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ____________________________________________________ */
+/* Responsividade (Telas menores que 768px) */
+
+@media screen and (max-width: 768px) {
+   
+  /* Receitas */
+
+  article {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+  }
+}
